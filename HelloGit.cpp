@@ -11,6 +11,16 @@ class UnknownError : public exception
 }
 
 
+class DivisionByZero : public exception
+{
+	char const *what() throw()
+	{
+		return "Try to divide a number by zero\n";
+	}
+}
+
+
+
 int main(int argc, char *argv[])
 {
 	try
