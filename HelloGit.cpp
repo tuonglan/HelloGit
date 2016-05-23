@@ -25,6 +25,9 @@ int main(int argc, char *argv[])
 {
 	try
 	{
+		int a = 100;
+		int b = 0;
+
 		throw(UnknowError());
 	}
 	catch (UnknownError &e)
